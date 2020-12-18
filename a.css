@@ -1,0 +1,24 @@
+.paper {
+    width: 21cm;
+    min-height: 28cm;
+    padding: 2cm;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.kertas {
+    background-color: blanchedalmond;
+}
+
+@media print {
+    body {
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .kertas {
+        background-color: initial;
+    }
+
+}
