@@ -1,11 +1,7 @@
-<?php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db = "generate_surat";
-
-$koneksi = mysqli_connect($host, $user, $pass, $db);
-
-if (!$koneksi) {
-    die("Koneksi gagal : " . mysql_connect_error());
+<?php 
+$conn = mysqli_connect("localhost","u5782209_root","r00tind0l0e1337","u5782209_generate-surat");
+ 
+// Check connection
+if (mysqli_connect_errno()){
+	echo "Koneksi database gagal : " . mysqli_connect_error();
 }
